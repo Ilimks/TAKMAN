@@ -1,0 +1,160 @@
+@media (width<500px) {
+  /* ----------------------------HEADER----------------------------- */
+
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .header {
+    padding: 5%;
+  }
+  .header_nav_list {
+    display: none;
+  }
+
+  .social__network {
+    display: none;
+  }
+
+  .header_nav_btn {
+    display: none;
+  }
+
+  .header__nav img {
+    width: 109px;
+    height: 40px;
+  }
+
+  .burger {
+    width: 28px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    right: -217px;
+    top: 35px;
+    z-index: 11;
+    border-radius: 1px;
+  }
+  .burger::before {
+    content: "";
+    width: 28px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: -12px;
+    border-radius: 1px;
+  }
+  .burger::after {
+    content: "";
+    width: 28px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: 12px;
+    border-radius: 1px;
+  }
+
+  .burger.active {
+    background: none;
+  }
+
+  .burger.active::after {
+    transform: rotate(-45deg) translate(30px, 40px);
+  }
+
+  .burger.active::before {
+    transform: rotate(45deg) translate(30px, -42px);
+  }
+
+  /* ----------------------------MAIN----------------------------- */
+
+  /* --------------SECTION1---------------- */
+
+  .banner {
+    height: 100vh;
+    background: url("./img/backbanner.png") center/cover no-repeat;
+  }
+
+  .span span{
+    display: none;
+  }
+  .swiptxt{
+    display: flex;
+    align-items: center;
+  }
+  .banner__txt h1 {
+    width: 100%;
+    font-size: 290%;
+  }
+  .banner__txt p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 110%;
+    margin-top: 7%;
+    line-height: 133%;
+  }
+  .instruction{
+    padding: 10% 0;
+  }
+  .instruction__top h1 {
+    font-size: 140%;
+  }
+  .instruction__top p {
+    font-size: 90%;
+    width: 80%  ;
+  }
+  .instruction__top button {
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .swiper-slide h1 {
+    width: 100%;
+    font-size: 140%;
+  }
+  .swiper-slide p {
+    font-size: 100%;
+    width: 100%;
+  }
+
+  .swiper-slide button {
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .graf {
+    height: 30vh;
+    padding: 5%;
+  }
+  .grafic__right {
+    width: 100%;
+  }
+  .grafic__right__text-bottom {
+    display: none;
+  }
+  .grafic-flex {
+    display: inline-block;
+    column-gap: 0;
+  }
+  .grafic__left p {
+    margin-top: 5%;
+  }
+  .grafic .container {
+    display: block;
+  }
+  .graf h1 {
+    font-size: 100%;
+  }
+  .graf h2 {
+    font-size: 12px;
+  }
+  .graf p {
+    width: 80%;
+    font-size: 80%;
+  }
+  .contact__box {
+    display: block;
+  }
+}
