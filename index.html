@@ -4,29 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Takman</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="header__nav">
-                <div class="flex-burger">
-                    <div onclick="ShowBurger()" class="burger"></div>
-                    <img class="header__nav__logo" src="img/logo_header.svg" alt="headerLogo">
-                </div>
+                <img class="header__nav__logo" src="img/logo_header.svg" alt="headerLogo">
                 <ul class="header__nav__list">
-                    <li><a class="header__list__a" href="">Катание</a></li>
-                    <li><a class="header__list__a" href="">Проживание</a></li>
-                    <li><a class="header__list__a" href="">Услуги</a></li>
-                    <li><a class="header__list__a" href="">Цены</a></li>
-                    <li><a class="header__list__a" href="">Как добраться</a></li>
-                    <li><a class="header__list__a" href="">Информация</a></li>
-                    <li><a class="header__list__a" href="">Лето</a></li>
+                    <li><a class="header__list__a  " href="">Катание</a></li>
+                    <li><a class="header__list__a " href="">Проживание</a></li>
+                    <li><a class="header__list__a " href="service.html">Услуги</a></li>
+                    <li><a class="header__list__a " href="">Цены</a></li>
+                    <li><a class="header__list__a " href="">Как добраться</a></li>
+                    <li><a class="header__list__a " href="">Информация</a></li>
+                    <li><a class="header__list__a fut " href="">Лето</a></li>
                 </ul>
+                <div onclick="showBurger()" class="burger"></div>
                 <div class="social__network">
                     <img class="vk" src="img/vk-header.svg" alt="vk">
                     <img class="whatsapp" src="img/whatsapp-header.svg" alt="whatsapp">
@@ -72,6 +72,7 @@
                             <p>Согласен(а) с правилами приобретения и использования сертификата</p>
                             <button class="popup__bottom__btn">Оплатить</button>
                         </div>
+                        <button class="popup__bottom__btn2">Оплатить</button>
                     </div>
                 </div>
             </div>
@@ -80,6 +81,9 @@
 
     <main>
         <section class="banner">
+            <div class="video">
+                <video class="video__media" src="video/4274798-uhd_3840_2160_25fps.mp4" autoplay muted loop></video>
+            </div>
             <div class="container">
                 <div class="banner__text">
                     <h1>Горнолыжный курорт «Такман»</h1>
@@ -163,8 +167,8 @@
         <section class="how-to-get">
             <div class="how-to-get__left">
                 <h2>Как добраться</h2>
-                <p>Скорый электропоезд "Ласточка" довезет Васдо Чусового,где производится пересадка наавтобусный
-                    трансфер до Горнолыжного курорта"Такман".</p>
+                <p>Скорый электропоезд "Ласточка" довезет Вас до Чусового,где производится пересадка на автобусный
+                    трансфер до Горнолыжного курорта "Такман".</p>
             </div>
             <div class="how-to-get__right">
                 <h2>График работы</h2>
@@ -193,7 +197,7 @@
                     style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Темиркула Уметалиева, 113 —
                     Яндекс Карты</a><iframe
                     src="https://yandex.ru/map-widget/v1/?ll=74.583527%2C42.879644&mode=whatshere&tab=inside&whatshere%5Bpoint%5D=74.582159%2C42.879071&whatshere%5Bzoom%5D=17&z=17"
-                    width="1890" height="844" frameborder="1" allowfullscreen="true"
+                    width="1890" height="600" frameborder="1" allowfullscreen="true"
                     style="position:relative;"></iframe></div>
         </section>
     </main>

@@ -4,10 +4,14 @@ let popupToggle = ()=>{
     popup.classList.toggle('active')
 }
 
-let header__nav__list = document.querySelector('header__nav header__nav__list')
-let burger = document.querySelector('.burger')
+let ul = document.querySelector('.header__nav__list')
+let network = document.querySelector('.social__network')
+let btn = document.querySelector('.header__nav__btn')
+let bur = document.querySelector('.burger')
 
-let ShowBurger = ()=>{
-    header__nav__list.classList.toggle('active')
-    burger.classList.toggle('active')
+let showBurger = ()=>{
+    ul.classList.toggle('active')
+    network.classList.toggle('active')
+    btn.classList.toggle('active')
+    bur.classList.toggle('active')
 }

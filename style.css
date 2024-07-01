@@ -15,6 +15,7 @@
 
 /* -------------------------------------HEADER----------------------------------------- */
 
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -40,7 +41,7 @@
 }
 
 
-.header__list__a {
+.header__list__a{
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -48,13 +49,33 @@
     line-height: 133%;
     font-family: "Montserrat", sans-serif;
     cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+.header__nav__list .fut {
+    color: #FFB802;
+    position: relative;
+}
+
+.header__nav__list .fut::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url(img/sun-icon.svg);
+    position: absolute;
+    bottom: 0px;
+    left: 49px;
 }
 
 .header__list__a:hover {
     color: #FFB802;
-    text-decoration: underline;
     transition: .3s;
 }
+
+
+
 
 .social__network {
     padding-top: 16px;
@@ -91,8 +112,8 @@
 }
 
 .header__nav__btn:hover {
-    background: #fff;
-    color: black;
+    background: #FFB802;
+    color: #fff;
     border: none;
     transition: .3s;
 }
@@ -101,16 +122,21 @@
     width: 1400px;
     height: 999px;
     background: #fff;
-    position: absolute;
+    position: relative;
     left: 20px;
     display: flex;
     display: none;
     flex-direction: column;
     padding-left: 60px;
+    
 }
 
 .popup.active{
     display: flex;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    z-index: 10;
 }
 
 .popup h2 {
@@ -232,8 +258,6 @@
     border-radius: 2px;
     border: 2px solid rgba(24, 31, 38, 0.5);
 }
-
-
 
 .popup__input__six {
     display: flex;
@@ -385,14 +409,42 @@
     transform: rotate(-90deg);
 }
 
+.popup__bottom__btn2 {
+    display: none;
+}
+
 
 /* -------------------------------------MAIN----------------------------------------- */
 
 /* ------------------SECTION1---------------------- */
 
 .banner {
-    background: url(img/banner__TAKMAN.png) center/cover no-repeat;
-    height: 940px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    z-index: 1;
+}
+
+.video__media {
+    width: 100%;
+    height: auto;
 }
 
 .banner__text {
@@ -400,33 +452,49 @@
     padding-top: 262px;
 }
 
-h1 {
+.banner__text h1 {
+    position: absolute;
+    top: 165px;
+    bottom: 0;
+    z-index: 3;
     width: 733px;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 70px;
     line-height: 115%;
     padding-bottom: 20px;
 }
 
 .banner__text__one {
+    position: absolute;
+    top: 370px;
+    bottom: 0;
+    z-index: 3;
     width: 590px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 133%;
     padding-bottom: 20px;
     font-family: "Formular", sans-serif;
 }
 
 .banner__text__two {
+    position: absolute;
+    top: 470px;
+    bottom: 0;
+    z-index: 3;
     width: 580px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 133%;
     font-family: "Formular", sans-serif;
 }
 
 
 .banner__btn {
+    position: absolute;
+    top: 560px;
+    bottom: 0;
+    z-index: 3;
     width: 170px;
     height: 52px;
     font-weight: 500;
